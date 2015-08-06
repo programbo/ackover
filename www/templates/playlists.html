@@ -1,0 +1,17 @@
+<ion-view view-title="Playlists">
+  <ion-content>
+    <div class="card" ng-repeat="playlist in playlists">
+      <a class="item item-text-wrap item-avatar" href="#/app/playlists/{{playlist.id}}">
+        <img src="http://placehold.it/40x40">
+        <h2>{{playlist.title}}</h2>
+        <p>Back off, man. I'm a scientist.</p>
+      </a>
+      <div class="item item-divider">
+        Received at 5:15pm, 6 Aug 2015
+      </div>
+    </div>
+    <button class="button button-block button-dark" ng-click="identifyUser()">
+      Identify a user
+    </button>
+  </ion-content>
+</ion-view>
